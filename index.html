@@ -2,44 +2,88 @@
 <html lang="en-gb">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mandy Miller // Web Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Mandy Miller</h1>
-    <nav>
-    </nav>
-  </header>
+    <header>
+        <h1>Mandy Miller</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#resume">Resume</a>
+        </nav>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+    </header>
+
+<!-- Failed to get the page dividers (vertical line between header and content to align. Will sort that another time!)-->
+
+    <section class="page-section">
+        <h2 id="about">About Me</h2>
+        <div class="divider">&nbsp</div>
+        <div class="section-content">
+            <p>Tableau Developer / Data Analyst with a wide technical skillset. Development of data models (SQL, Python) through to the front-end production of engaging dashboard visualisations (Tableau, Power BI) in Google Big Query and AWS environments. 
+            </p>
+            <p>Currently embarking on learning some new skillsets and hope to be a competent Front End Dev by the end of this course</p>
+        </div>
+    </section>
+
+
+
+
+    <section class="page-section">
+        <h2 id="work">Work</h2>
+        <div class="divider">&nbsp</div>
+        <div class="section-content">
+            <section id="categoryGrid">
+<!-- Had to add the href into the hedings as came unstuck trying to get the entire image, or Div to link. Have used generic links to Wikipedia relevant pages-->
+
+               <div id="portfolio1" class="categoryGridArea">
+                    <div class="heading"><a href="https://en.m.wikipedia.org/wiki/Surfing/">Surf Report</a></div>
+                </div>
+
+                <div id="portfolio2" class="categoryGridArea">
+                    <div class="heading"><a href="https://en.wikipedia.org/wiki/Student/">Student Guide Notes</a></div>
+                </div>
+                <div id="portfolio3" class="categoryGridArea">
+                    <div class="heading"><a href="https://en.wikipedia.org/wiki/Dating_app/">Dating App</a></div>
+                </div>
+                <div id="portfolio4" class="categoryGridArea">
+                    <div class="heading"><a href="https://en.wikipedia.org/wiki/Generic_Mapping_Tools/">Mapping Tool</a></div>
+                </div>
+                <div id="portfolio5" class="categoryGridArea">
+                    <div class="heading"><a href="https://en.wikipedia.org/wiki/Tableau_Software/">Tableau Dashboard</a></div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="page-section">
+        <h2 id="contact">Contact Details</h2>
+        <div class="divider">&nbsp</div>
+        <div class="section-content">
+            <p>Call me on: +44 7976 123456 or visit me at <a href ="https://www.linkedin.com/in/mandy-miller-7817538/">Linked In</a> </p>
+        </div>
+    </section>
+
+    <section class="page-section">
+      <h2 id="resume">Resume</h2>
+      <div class="divider">&nbsp</div>
+      <div class="section-content">
+          <p>Download my <a href = "https://docs.google.com/document/d/1mKjLW9luS4vg1tAPeYfW8_EQ396YWX7bP-GUDDT93r0/edit?usp=sharing">CV here </a>  </p>
+      </div>
   </section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
 </body>
 
 </html>

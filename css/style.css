@@ -1,23 +1,201 @@
-* {
-  box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 1.5;
+        background-color: #f4f4f4;
+    }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+    header {
+        background: #333;
+        background-image: url(../images/profile_photo.jpg);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: right;
+        color: white;
+        text-align: left;
+        padding: 15px;
+    }
 
-p {
-  margin: 0;
-}
+    nav {
+        background: #555;
+        width: 800px;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: underline;
+        padding: 8px 15px;
+        margin: 0px 15px;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 30px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        /*Used grid but maybe I should have used flex. Will try another time. Does the jojb. */
+    #categoryGrid {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "portfolio1 portfolio1"
+            "portfolio2 portfolio3"
+            "portfolio4 portfolio5";
+    }
+
+  
+    /*Clumsy attempt to resize for viewport <575px. Ideally I would have done the headings as well, but ran out of time and brainpower. So I only got the portfolion tiles to rejig into a single column */
+
+    @media all and (max-width:575px)
+{
+      #categoryGrid {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "portfolio1"
+            "portfolio2"
+            "portfolio3"
+            "portfolio4" 
+            "portfolio5";
+    }
+  }
+
+    .categoryGridArea {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 5px;
+        cursor: pointer;
+        display: grid;
+        align-content: end;
+    }
+
+    .heading {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px;
+        display:flex;
+        text-align: center;
+        height: 40px;
+        color: white;
+        font-size: 18px;
+        border-top: 5px solid #555;
+        border-bottom: 5px solid #555;
+        border-left: 5px solid #555;
+        border-right: 5px solid #555;
+    }
+
+
+    .heading  a{
+      color: white;
+      text-decoration: none;
+
+  }
+
+
+    .hero-banner {
+        background: #eeeeee;
+        background-image: url(../images/02-hero-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
+        color: white;
+        text-align: right;
+        vertical-align: bottom;
+        padding: 0px;
+    }
+
+
+    .image-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-box img {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+
+
+      /*Tried to use this to place Linked in Style circular profile pic, but couldn't get it right. Leaving here so I can attempt later. */ 
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 20%;
+      position: absolute;
+    }
+
+    .page-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+
+
+    .divider {
+        height: 100%;
+        width: 2px;
+        background-color: #333;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .section-content {
+        flex-grow: 1;
+    }
+
+    #portfolio1 {
+        grid-area: portfolio1;
+        background-image: url("../images/02-portfolio-1.jpg");
+      
+
+    }
+
+
+    #portfolio2 {
+        grid-area: portfolio2;
+        background-image: url("../images/02-portfolio-2.jpg");
+    }
+
+    #portfolio3 {
+        grid-area: portfolio3;
+        background-image: url("../images/02-portfolio-3.jpg");
+    }
+
+    #portfolio4 {
+        grid-area: portfolio4;
+        background-image: url("../images/02-portfolio-4.jpg");
+    }
+
+    #portfolio5 {
+        grid-area: portfolio5;
+        background-image: url("../images/02-run-buddy.jpg");
+    }
+
+    #page-section a {
+      color: rgb(14, 14, 14);
+      text-decoration: underline;
+      padding: 8px 15px;
+      margin: 0px 15px;
+  }

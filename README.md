@@ -31,7 +31,7 @@ This site can be accessed on GitPages [HERE](https://mandyjmiller.github.io/week
 
 Screenshot of the site can be seen here:
 
-![screenshot](/images/screenshot.png)
+![screenshot](images/screenshot.png)
 
 
 
